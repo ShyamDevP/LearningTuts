@@ -1,0 +1,106 @@
+Class : 
+        A class is a user-defined blueprint or prototype from which objects are created.  It represents the set of properties or methods that are common to all objects of one type. In general, class declarations can include these components, in order:  
+
+we have various types of classes in Java.
+
+Concrete class: A normal class that has the concrete implementation of methods.
+POJO class: This is “Plain Old Java Object” containing only private member variables and getter setter methods to access these variables.
+Abstract class: This class has one or more abstract methods.
+Final class: A final class cannot be inherited.
+Static class: A class containing only static members.
+Inner class: An inner class is a class that is a member of another class.
+
+Also we have special classes in java such as 
+Anonymous class: A class without any name.
+Immutable class: A class whose object cannot be changed.
+Singleton class: A class whose single instance can be created.
+Object class: The base class of all Java features.
+Wrapper class: Every primitive data type in Java has a wrapper class.
+
+Types Of Classes In Java
+Now let us move on to the types of classes in Java. We will explain each of these classes one by one followed by the programming examples.
+
+#1. Concrete Class
+A concrete class is any normal class in a Java program. This class will not have any abstract methods. All the methods in the concrete class are completely implemented.
+
+A concrete class can inherit from another class, even an abstract class or implement an interface. We can instantiate the concrete class and create its objects.
+
+
+#2. POJO Class
+A POJO (Plain Old Java Object) is a class containing only private member variables. Apart from the private member variables it only contains getter and setter methods used by these member variables.
+
+A POJO class does not have its behavior. However, it may override some methods like equals or interfaces.
+
+Properties of POJO class:
+
+POJO class must have a public getter and setter method.
+All the members or instance variables should be private.
+POJO class does not extend or implement classes or interfaces that are pre-specified.
+They do not contain annotations that are pre-specified.
+Does not have a constructor without any arguments (no-argument constructor).
+
+#3. Abstract Class
+An abstract class is a class that is incomplete or whose implementation is not completed. An abstract class cannot be instantiated. It needs to be extended by the other classes and implement its methods to form a concrete class.
+
+An abstract class is declared by using the keyword ‘abstract’. An abstract class can have static and final methods as well as constructors.
+
+#4. Static Class
+A static in Java in general means the object that belongs to a class and not to the individual instances. So a static member or method in Java need not be accessed with an object but directly using a class name.
+
+A static class in Java can contain only static members. Also, we cannot instantiate a static class.
+
+#5. Final Class
+A final class is a class that cannot be inherited or subclassed. Once a class is declared final in Java, it is a sort of constant and it becomes immutable.
+
+Hence to make a class immutable, we have to declare it as final.
+
+
+#6. Nested Class/ Inner Class
+Nested class, also known as Inner class in Java is used to enhance encapsulation. A nested class/Inner class is a class enclosed inside another class.
+
+
+Just like a class has variables and methods as its members, it can also have an inner class as its member.
+
+Inner classes have the following subtypes:
+
+Nested Inner class
+Method Local Inner class
+Anonymous Inner class
+Static Nested class
+#1. Nested Inner Class
+
+A nested inner class has access to private member variables of an outer class. We can also apply access modifiers to the nested inner class.
+
+#2. Method Local Inner Class
+
+This is the inner class that is declared inside an outer class method.
+
+#3. Anonymous Inner Class
+
+Anonymous inner class is an inner class declared inside an outer class and is without any name.
+
+#4. Static-Nested Class
+
+The way a class has a static member variable, it can also have a static class as its member.
+
+
+Immutable Class In Java
+An immutable class generates immutable objects. An immutable object is an object whose contents cannot be changed once the object is created. So an immutable class is one whose object cannot be changed once created.
+
+All the wrapper classes in Java for primitive types (Integer, Boolean, Byte, etc.) are immutable. The String class is also immutable.
+
+We can also have user-defined immutable classes in Java.
+
+For a class to be immutable, it needs to be declared final along with all its data members. Also, the class should have a parameterized constructor. All the member variables should have a getter method but not a setter method.
+
+All the above requirements must be fulfilled for a class to be immutable
+
+Singleton Class In Java
+A singleton class allows a single instance at a time. In Java, a singleton is a design pattern. This design pattern ensures that only one instance of a class exists at any point in time. So any class defined as a singleton has a single access point and it is global.
+
+Note that termination of the application life cycle does not destroy a singleton class like the normal classes. When a class is declared singleton, then we do not create a new instance every time a new request for the object is made.
+
+The same instance is used again and again. This way we can save memory space mostly in the case of multi-threaded and database applications.
+
+We can use a singleton class for activities like caching, logging, etc.
+
